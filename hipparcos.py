@@ -20,9 +20,6 @@ ax.scatter(RA,DEC, color='white', marker='o',s=80*(np.power(10,Vmag/-2.5)))
 
 #ax.grid(color='white', linestyle='--', linewidth=0.5)
 ax.tick_params(colors='white')  # Set tick labels color to white
-for spine in ax.spines.values():
-    spine.set_color('white')  # Set spines color to white
-
 
 ax.set_xlabel('Right Ascension', color='white')
 ax.set_ylabel('Declination', color = 'white')
@@ -30,11 +27,4 @@ ax.set_ylabel('Declination', color = 'white')
 ax.grid(False)
 ax.set_xlim(0,24)
 ax.set_ylim(-90,90)
-
-
 plt.show()
-
-
-
-
-
